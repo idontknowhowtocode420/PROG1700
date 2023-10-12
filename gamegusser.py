@@ -4,14 +4,25 @@ import random
 randomnum = random.randint(1,10)
 name = None 
 
-name = input('Hello! What is your name!:')
+while True:
+    name = input('Hello! What is your name!:')
+    if name.isdigit():
+        print("Please enter a valid name")
 
-trys = 1
+    else:
+    
+        break
 
-guess = int(input(f'Hi {name} Please guess a number between 1 and 10:'))
 
-while trys < 5:
-    guess = int(input(f'{name} You have used {trys} guesses out of 5! Please enter another guess: '))
+
+while True:
+    if name.isalpha():    
+        trys = 1
+
+    guess = int(input(f'Hi {name} Please guess a number between 1 and 10:'))
+
+    while trys < 5:
+        guess = int(input(f'{name} You have used {trys} guesses out of 5! Please enter another guess: '))
     if trys == 5:
         print(f'{name} You ran out of guesses! The number was: {randomnum}')
         break   
@@ -28,3 +39,6 @@ while trys < 5:
         trys += 1
         if trys == 5:
             print(f'{name} You ran out of guesses! The number was: {randomnum}')
+else:
+    
+    print("Please enter valid name")           
