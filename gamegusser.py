@@ -1,4 +1,4 @@
-import random #bob45yryyryryrtyrtyrrtu
+import random
 
 randomnum = random.randint(1,10)
 name = None 
