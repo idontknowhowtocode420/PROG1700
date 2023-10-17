@@ -2,7 +2,7 @@ import random
 
 randomnum = random.randint(1,10)
 name = None 
-    
+ 
 while True:
         name = input('Hello! What is your name!:')
         if name.isalpha(): 
