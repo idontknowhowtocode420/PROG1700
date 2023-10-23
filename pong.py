@@ -29,6 +29,14 @@ balls.color("orange")
 balls.penup()
 balls.goto(0,0)
 
+pen = turtle.Turtle()
+pen.speed(0)
+pen.shape("circle")
+pen.color("orange")
+pen.penup()
+pen.hideturtle
+pen.goto(0,260)
+pen.write("Player A: 0  Player B: 0")
 
 
 while True:
