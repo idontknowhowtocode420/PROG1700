@@ -31,7 +31,7 @@ balls.goto(0,0)
 
 pen = turtle.Turtle()
 pen.speed(0)
-pen.shape("circle")
+pen.shape("triangle")
 pen.color("orange")
 pen.penup()
 pen.hideturtle
