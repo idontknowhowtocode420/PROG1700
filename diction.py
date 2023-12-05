@@ -1,4 +1,4 @@
-
+#W0488576 Ethan Maccdonald Python Dictionary Exercise
 student_scores = {}
  
 
